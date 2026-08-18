@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Operating Systems Lab - 15 Experiments</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #172554, #2563eb);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .intro {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .intro h2 {
+            color: #1d4ed8;
+            margin-bottom: 10px;
+        }
+
+        .experiments {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            border-left: 5px solid #2563eb;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .number {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 7px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .card h3 {
+            color: #172554;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: #2563eb;
+            color: white;
+            padding: 9px 16px;
+            border-radius: 7px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            .container {
+                width: 94%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Operating Systems Laboratory</h1>
+    <p>15 Experiments | CSE Lab | System Programming & OS Concepts</p>
+</header>
+
+<div class="container">
+
+    <div class="intro">
+        <h2>About This Repository</h2>
+
+        <p>
+            This repository contains implementations of 15 important
+            Operating Systems laboratory experiments using C, Shell
+            Scripting and UNIX concepts.
+        </p>
+
+        <br>
+
+        <p>
+            The experiments cover process management, CPU scheduling,
+            inter-process communication, synchronization, deadlocks,
+            memory management, file systems and disk scheduling.
+        </p>
+    </div>
+
+    <div class="experiments">
+
+        <!-- Experiment 1 -->
+        <div class="card">
+            <span class="number">Experiment 01</span>
+            <h3>Operating System Installation</h3>
+            <p>
+                Study Windows operating system installation and
+                important system commands.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/01_installation/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 2 -->
+        <div class="card">
+            <span class="number">Experiment 02</span>
+            <h3>UNIX & Shell Programming</h3>
+            <p>
+                Study UNIX commands and implement shell programs such
+                as factorial, Fibonacci, palindrome and calculator.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/02_unix_shell/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 3 -->
+        <div class="card">
+            <span class="number">Experiment 03</span>
+            <h3>System Calls</h3>
+            <p>
+                Implement fork(), getpid(), wait(), exit() and
+                close() system calls.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/03_system_calls/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 4 -->
+        <div class="card">
+            <span class="number">Experiment 04</span>
+            <h3>CPU Scheduling</h3>
+            <p>
+                Implement FCFS, SJF, Priority Scheduling and
+                Round Robin algorithms.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/04_cpu_scheduling/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 5 -->
+        <div class="card">
+            <span class="number">Experiment 05</span>
+            <h3>Inter Process Communication</h3>
+            <p>
+                Implement communication between processes using
+                pipes.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/05_ipc/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 6 -->
+        <div class="card">
+            <span class="number">Experiment 06</span>
+            <h3>Semaphore</h3>
+            <p>
+                Implement process synchronization using semaphores
+                and understand critical sections.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/06_semaphore/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 7 -->
+        <div class="card">
+            <span class="number">Experiment 07</span>
+            <h3>Banker's Algorithm</h3>
+            <p>
+                Implement Banker's Algorithm for deadlock avoidance
+                and determine safe sequences.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/07_bankers_algorithm/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 8 -->
+        <div class="card">
+            <span class="number">Experiment 08</span>
+            <h3>Deadlock Detection</h3>
+            <p>
+                Implement a deadlock detection algorithm and
+                determine whether the system is safe.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/08_deadlock_detection/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 9 -->
+        <div class="card">
+            <span class="number">Experiment 09</span>
+            <h3>Threading</h3>
+            <p>
+                Create and manage POSIX threads using
+                pthread_create() and pthread_join().
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/09_threading/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 10 -->
+        <div class="card">
+            <span class="number">Experiment 10</span>
+            <h3>Paging</h3>
+            <p>
+                Implement paging and perform logical-to-physical
+                address translation.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/10_paging/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 11 -->
+        <div class="card">
+            <span class="number">Experiment 11</span>
+            <h3>Memory Allocation</h3>
+            <p>
+                Implement First Fit, Best Fit and Worst Fit
+                memory allocation algorithms.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/11_memory_allocation/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 12 -->
+        <div class="card">
+            <span class="number">Experiment 12</span>
+            <h3>Page Replacement</h3>
+            <p>
+                Implement FIFO, LRU and Optimal page replacement
+                algorithms.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/12_page_replacement/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 13 -->
+        <div class="card">
+            <span class="number">Experiment 13</span>
+            <h3>File Organization</h3>
+            <p>
+                Study Sequential, Direct/Random and Indexed
+                file organization techniques.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/13_file_organization/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 14 -->
+        <div class="card">
+            <span class="number">Experiment 14</span>
+            <h3>File Allocation</h3>
+            <p>
+                Implement Linked and Indexed file allocation
+                techniques.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/14_file_allocation/">
+                View Experiment
+            </a>
+        </div>
+
+        <!-- Experiment 15 -->
+        <div class="card">
+            <span class="number">Experiment 15</span>
+            <h3>Disk Scheduling</h3>
+            <p>
+                Implement FCFS, SSTF, SCAN and C-SCAN disk
+                scheduling algorithms.
+            </p>
+            <a class="btn" href="OS_Lab_GitHub_Experiments/15_disk_scheduling/">
+                View Experiment
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p><strong>Operating Systems Laboratory</strong></p>
+    <p>15 Experiments | CSE</p>
+    <p>© 2026 All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
